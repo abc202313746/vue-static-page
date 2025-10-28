@@ -14,7 +14,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-jobs: #핵심! 2가지로 나뉨 빌드랑 디플로이
+jobs: #핵심! 2가지로 나뉨 빌드랑 디플로이!
   build:
     runs-on: ubuntu-latest
     steps: #첫 스텝 / 노드 설치 / 필요한 패키지 설치 단계
