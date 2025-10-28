@@ -1,3 +1,4 @@
+
 <template>
   <div class="app" :class="{ 'reduce-motion': prefersReduced }">
     <!-- Top Bar -->
@@ -19,27 +20,10 @@
       <div class="cloud cloud-1" aria-hidden="true"></div>
       <div class="cloud cloud-2" aria-hidden="true"></div>
 
-      <!-- Moon + Rabbits (SVG) -->
-      <div class="moon" role="img" aria-label="보름달과 토끼 절구질">
-        <svg viewBox="0 0 200 200" class="moon-svg" aria-hidden="true">
-          <defs>
-            <radialGradient id="g" cx="50%" cy="45%" r="60%">
-              <stop offset="0%" stop-color="#fff8d6"/>
-              <stop offset="65%" stop-color="#ffe899"/>
-              <stop offset="100%" stop-color="#ffdd7a"/>
-            </radialGradient>
-          </defs>
-          <circle cx="100" cy="100" r="90" fill="url(#g)" />
-          <!-- rabbits silhouette -->
-          <g fill="#8b6f3d" opacity="0.5" transform="translate(38,60) scale(0.8)">
-            <path d="M40 70c-5-15 10-22 14-27 4-6 0-12 3-17 4-6 13-7 18-2 5 4 6 12 2 17-4 4-7 3-12 8 4 3 8 7 9 12 3 11-9 21-20 19-5-1-10-5-14-10z"/>
-            <rect x="70" y="60" width="12" height="18" rx="2"/>
-            <path d="M82 60c8-5 18-8 26-8 2 0 3 2 2 4-1 3-4 5-7 6-7 3-13 5-21 6z"/>
-            <circle cx="65" cy="35" r="8"/>
-            <circle cx="52" cy="32" r="6"/>
-          </g>
-        </svg>
+      <div class="moon">
+        <img :src="moonImg" alt="보름달 이미지" class="moon-image" />
       </div>
+
 
       <!-- Floating Lanterns -->
       <ul class="lanterns" aria-hidden="true">
@@ -176,6 +160,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
+import moonImg from './assets/moon.jpg'
 
 type Lantern = { id: number; x: number; delay: number; duration: number; scale: number }
 
@@ -566,4 +551,12 @@ const shootLantern = () => {
 .reduce-motion .game-lantern {
   animation: none !important;
 }
+.moon-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 225, 150, 0.6);
+  filter: brightness(1.05) contrast(1.1);
+}
+
 </style>
