@@ -1,6 +1,9 @@
 # Vue 3 + TypeScript + Vite
 
 
+### 🌕 저장소 링크 🌕
+
+https://github.com/abc202313746/vue-static-page
 
 ### 🌕 배포 링크 🌕
 
@@ -14,7 +17,7 @@ https://abc202313746.github.io/vue-static-page/
 ```
 
 ```
-2. 이미지가 깨지지 않도록, moon.jpg를 가지고 기존 코드에서 어울리게 수정 시켜줄래?
+2. 이미지가 깨지지 않도록, moon.jpg를 가지고 기존 코드에서 어울리게 수정할 코드를 알려줄래?
 ```
 
 ***
