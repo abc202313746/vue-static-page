@@ -1,12 +1,12 @@
 # Vue 3 + TypeScript + Vite
 
-***
+
 
 ### 🌕 배포 링크 🌕
 
 https://abc202313746.github.io/vue-static-page/ 
 
----
+***
 
 ### 🌕 사용한 프롬프트 🌕
 ```
@@ -17,7 +17,7 @@ https://abc202313746.github.io/vue-static-page/
 2. 이미지가 깨지지 않도록, moon.jpg를 가지고 기존 코드에서 어울리게 수정 시켜줄래?
 ```
 
----
+***
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
